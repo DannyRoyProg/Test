@@ -1,10 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>SportPedia</title>
+    <meta name="description" content="Informations Sports"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Main.css">
 </head>
-<body>
-$END$
-</body>
+    <body>
+        <header>
+            <a href="index.html"> <img src="image/logo.png" alt="Logo" style="width:250px;height:250px;"></a>
+            <h1 class="title">SportPedia - LNH</h1>
+            <nav class="menu">
+                <a href="index.html" title="SportPedia Accueil">| ACCUEIL |</a>
+                <a href="Basketball.html" title="SportPedia NBA">| NBA |</a>
+                <a href="Hockey.html" class="active" title="SportPedia LNH">| LNH |</a>
+                <a href="Lhjmq.html" title="SportPedia LHJMQ">| LHJMQ |</a>
+                <a href="Soccer.html" title="SportPedia MLS">| MLS |</a>
+            </nav>
+            <img src="image/lnh.png" alt="Logo" style="float:right;width:275px;height:250px;margin: 0">
+        </header>
+        <main>
+            <p class="font-size">
+                La Ligue nationale de hockey ou LNH (en anglais : National Hockey League – NHL)
+                est une association sportive professionnelle nord-américaine regroupant des franchises de hockey sur glace du Canada et des États-Unis.
+                Le niveau de jeu de cette ligue est considéré comme un des meilleurs au monde. Les joueurs qui la composent ont longtemps été en grande majorité d'origine canadienne puis nord-américaine.
+                Au fur et à mesure, de nouvelles nationalités de joueurs se sont ajoutées à la liste et, même si les Canadiens restent les plus nombreux, plusieurs pays sont désormais représentés.
+                La LNH opère annuellement de septembre à juin au cours de deux phases distinctes : la saison régulière au cours de laquelle, toutes les équipes se rencontrent puis une phase de séries éliminatoires entre les meilleures formations de la première phase.
+                Une série entre deux équipes se joue au cours de plusieurs matchs et la finale des séries voit l'attribution au vainqueur de la Coupe Stanley, un des plus anciens trophées collectifs au monde.
+                La Ligue nationale de hockey est créée le 26 novembre 1917 après une rencontre entre les représentants de l'Association nationale de hockey à l’hôtel Windsor de Montréal. Les propriétaires des Canadiens de Montréal,
+                Wanderers de Montréal, Sénateurs d'Ottawa, Bulldogs de Québec et Arenas de Toronto décident de créer une nouvelle ligue afin d'exclure Edward J. Livingston, propriétaire des Blueshirts de Toronto. Pendant ses 25 premières années,
+                la LNH compte un nombre variable d'équipes allant jusqu'à rassembler 10 équipes entre 1926 et 1931. La Grande Dépression de 1929 affaiblit les finances des franchises de la LNH qui s'arrêtent les unes après les autres. Finalement, en 1942,
+                il ne reste plus que six équipes et elles se partagent la Coupe Stanley au cours des 25 saisons qui suivent. Depuis 1967, la LNH est régulièrement en expansion et compte 30 franchises différentes de la saison 2000-2001 à la saison 2016-2017.
+                En 2017-2018, elle accueille une 24e franchise américaine, contre 7 canadiennes, après la création d'une équipe à Las Vegas, dont l'effectif est constitué grâce à un repêchage d'expansion organisé en 2017. Un processus qui sera identique pour Seattle,
+                dont la franchise est approuvée par la LNH le 4 décembre 2018.
+            </p>
+
+            <div class="gauche">
+                <h2>SPORTPEDIA</h2>
+                <a href="index.html"> <img src="image/logo.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Page d'accueil</p>
+            </div>
+
+            <div class="milieu">
+                <h2>HOCKEY</h2>
+                <a href="Lhjmq.html"> <img src="image/lhjmq.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Informations sur la LHJMQ</p>
+            </div>
+
+            <div class="droite">
+                <h2>MLS</h2>
+                <a href="Soccer.html"> <img src="image/mls.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Informations sur la MLS</p>
+            </div>
+        </main>
+        <footer>
+            <form action="Hockey.html">
+                <fieldset>
+                    <legend class="font-size">Posez-nous une question:</legend>
+                    Prénom :<br>
+                    <input type="text" name="prenom"><br><br>
+                    Nom de famille :<br>
+                    <input type="text" name="nom"><br><br>
+                    Adresse courriel :<br>
+                    <input type="email" name="courriel"><br><br>
+                    <textarea class="text-question" name="message" style="width:1000px; height:150px;">Entrez votre question</textarea><br>
+                    <button type="submit" onclick="alert('Question envoyé')">Soumettre</button>
+                </fieldset>
+            </form>
+            ©Copyright
+        </footer>
+    </body>
 </html>
