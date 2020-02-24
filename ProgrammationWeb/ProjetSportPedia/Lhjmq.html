@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>SportPedia</title>
+    <meta name="description" content="Informations Sports"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Main.css">
 </head>
-<body>
-$END$
-</body>
+    <body>
+        <header>
+            <a href="index.html"> <img src="image/logo.png" alt="Logo" style="width:250px;height:250px;"></a>
+            <h1 class="title">SportPedia - LHJMQ</h1>
+            <nav class="menu">
+                <a href="index.html" title="SportPedia Accueil">| ACCUEIL |</a>
+                <a href="Basketball.html" title="SportPedia NBA">| NBA |</a>
+                <a href="Hockey.html" title="SportPedia LNH">| LNH |</a>
+                <a href="Lhjmq.html" class="active" title="SportPedia LHJMQ">| LHJMQ |</a>
+                <a href="Soccer.html" title="SportPedia MLS">| MLS |</a>
+            </nav>
+            <img src="image/Logo_LHJMQ.svg" alt="Logo" style="float:right;width:250px;height:250px;margin: 0">
+        </header>
+        <main>
+            <p class="font-size">
+                La Ligue de hockey junior majeur du Québec (LHJMQ) est l'une des trois ligues junior majeur qui constituent la Ligue canadienne de hockey (LCH). Son commissaire actuel est Gilles Courteau.
+                Elle inclut également des équipes des provinces de l'Île-du-Prince-Édouard, du Nouveau-Brunswick et de la Nouvelle-Écosse.
+            </p>
+
+            <div class="gauche">
+                <h2>SPORTPEDIA</h2>
+                <a href="index.html"> <img src="image/logo.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Page d'accueil</p>
+            </div>
+
+            <div class="milieu">
+                <h2>HOCKEY</h2>
+                <a href="Hockey.html"> <img src="image/lnh.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Informations sur la LNH</p>
+            </div>
+
+            <div class="droite">
+                <h2>MLS</h2>
+                <a href="Soccer.html"> <img src="image/mls.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Informations sur la MLS</p>
+            </div>
+        </main>
+        <footer>
+            <form action="Lhjmq.html">
+                <fieldset>
+                    <legend class="font-size">Posez-nous une question:</legend>
+                    Prénom :<br>
+                    <input type="text" name="prenom"><br><br>
+                    Nom de famille :<br>
+                    <input type="text" name="nom"><br><br>
+                    Adresse courriel :<br>
+                    <input type="email" name="courriel"><br><br>
+                    <textarea class="text-question" name="message" style="width:1000px; height:150px;">Entrez votre question</textarea><br>
+                    <button type="submit" onclick="alert('Question envoyé')">Soumettre</button>
+                </fieldset>
+            </form>
+            ©Copyright
+        </footer>
+    </body>
 </html>
