@@ -1,35 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>SportPedia Football</title>
-    <meta name="description" content="super exemple pour le cours de web"/>
+    <title>SportPedia</title>
+    <meta name="description" content="Informations Sports"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Main.css">
 </head>
     <body>
         <header>
-            <nav id="menu">
-                <a class="text-align" href="index.html" title="SportPedia Accueil">Accueil</a>
-                <a class="text-align" href="Basketball.html" title="SportPedia NBA">NBA</a>
-                <a class="text-align" href="Hockey.html" title="SportPedia LNH">LNH</a>
-                <a class="text-align" href="Lhjmq.html" title="SportPedia LHJMQ">LHJMQ</a>
-                <a class="text-align" href="Football.html" title="SportPedia FIFA">FIFA</a>
+            <a href="index.html"> <img src="image/logo.png" alt="Logo" style="width:250px;height:250px;"></a>
+            <h1 class="title">SportPedia - Soccer</h1>
+            <nav class="menu">
+                <a href="index.html" title="SportPedia Accueil">| ACCUEIL |</a>
+                <a href="Basketball.html" title="SportPedia NBA">| NBA |</a>
+                <a href="Hockey.html" title="SportPedia LNH">| LNH |</a>
+                <a href="Lhjmq.html" title="SportPedia LHJMQ">| LHJMQ |</a>
+                <a href="Soccer.html" class="active" title="SportPedia MLS">| MLS |</a>
             </nav>
+            <img src="image/mls.png" alt="Logo" style="float:right;width:250px;height:250px;margin: 0">
         </header>
         <main>
-            <h1 id="title">SportPedia - Soccer</h1>
-            <p> </p>
-            <style> body {
-                background-image: url('image/soccer.png');
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center center;
-            }
-            </style>
+            <p class="font-size">
+                La Fédération internationale de football association2 (souvent désignée par l'acronyme FIFA) est la fédération sportive internationale du football, du futsal et du football de plage. Association des fédérations nationales fondée le 21 mai 1904 à Paris,
+                elle a pour vocation de gérer et de développer le football dans le monde. La Coupe du monde de football est créée en 1924 par Jules Rimet3, président de la fédération internationale de 1920 à 1954. Le terme Football Association est le nom originel du football,
+                utilisé pour le distinguer des autres sports de ballon.
+                Fondée par les fédérations d'Allemagne, de Belgique, du Danemark, d'Espagne, de France, des Pays-Bas, de Suède et de Suisse, elle compte au 13 mai 2016 211 associations nationales affiliées à travers le monde, qui doivent être reconnues par l'une des six confédérations continentales.
+                Son siège est situé depuis 1932 à Zurich, en Suisse.
+                Bien qu'étant officiellement une association à but non lucratif, la FIFA brasse un chiffre d'affaires très important du fait de l'organisation des compétitions et de leur sponsoring. En 2013, la FIFA génère 1,3 milliard de dollars de chiffre d'affaires,
+                et dispose de réserves évaluées à 1,4 milliard de dollars4. La FIFA est chargée de l'organisation des grands tournois mondiaux, et notamment des Coupes du monde masculines, depuis le 13 juillet 1930, et féminines, depuis le 30 novembre 1991.
+                Après plusieurs années de rumeurs et d'enquêtes de journalistes sur les affaires financières au sein de la FIFA, notamment autour de l'attribution de l'organisation des Coupes du monde de 2018 et 2022 à la Russie et au Qatar,
+                une enquête lancée par le département de la Justice des États-Unis pour des faits de corruption aboutit à un grand scandale en 2015, à la suite duquel le président Sepp Blatter, le 2 juin 2015, trois jours après sa réélection pour un cinquième mandat, annonce qu'il convoque un congrès extraordinaire,
+                prévu en février 2016, afin de remettre son mandat de président à disposition. Le 8 octobre 2015, la commission d'éthique de la FIFA suspend Sepp Blatter de manière provisoire, pendant 90 jours5. Le 21 décembre 2015, la commission suspend Sepp Blatter pour 8 ans.
+                Cette suspension est ramenée à six ans le 24 février 2016, peu avant l'élection de son successeur, Gianni Infantino, le 26 février 2016.
+            </p>
+
+            <div class="gauche">
+                <h2>SPORTPEDIA</h2>
+                <a href="index.html"> <img src="image/logo.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Page d'accueil</p>
+            </div>
+
+            <div class="milieu">
+                <h2>HOCKEY</h2>
+                <a href="Hockey.html"> <img src="image/lnh.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <a href="Lhjmq.html"> <img src="image/lhjmq.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Informations sur la LNH ou la LHJMQ</p>
+            </div>
+
+            <div class="droite">
+                <h2>NBA</h2>
+                <a href="Basketball.html"> <img src="image/nba.png" alt="Logo" style="width:250px;height:250px;"></a>
+                <p class="font-size">Informations sur la NBA</p>
+            </div>
         </main>
         <footer>
-            <p class="text-footer">Nous joindre : </p>
+            <form action="Soccer.html">
+                <fieldset>
+                    <legend class="font-size">Posez-nous une question:</legend>
+                    Prénom :<br>
+                    <input type="text" name="prenom"><br><br>
+                    Nom de famille :<br>
+                    <input type="text" name="nom"><br><br>
+                    Adresse courriel :<br>
+                    <input type="email" name="courriel"><br><br>
+                    <textarea class="text-question" name="message" style="width:1000px; height:150px;">Entrez votre question</textarea><br>
+                    <button type="submit" onclick="alert('Question envoyé')">Soumettre</button>
+                </fieldset>
+            </form>
             ©Copyright
         </footer>
     </body>
